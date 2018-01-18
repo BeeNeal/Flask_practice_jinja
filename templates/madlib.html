@@ -1,5 +1,6 @@
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="/static/madlibs.css">
     <title>MADLIB</title>
 </head>
 <body>
@@ -7,6 +8,18 @@
 There once was a {{ color }} {{ noun }} sitting in the dungeon.
 When {{ person }} went to pick it up, it burst into flames in a totally
 {{ adjective }} way.
+
+<!-- <p>And {{ person }} is {{ adjs[0] }} and does {{ adjs[1] }} things.
+ -->
+
+ {% if adjs %}
+ And they're a
+
+     {% for adj in adjs %}
+        {{ adj }},
+    {% endfor %}   
+    {% endif %}
+    person.
 
 </body>
 </html>
