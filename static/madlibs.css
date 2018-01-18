@@ -1,0 +1,10 @@
+body {
+    background-color: #f9d5d5;
+}
+
+.box {
+    background-color: #e9d5d5;
+    font-family: courier, serif;
+    width:  400px;
+    height: 300px;
+}
